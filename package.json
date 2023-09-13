@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "fastly compute serve --watch",
+    "prebuild": "bun ./build.ts",
+    "build": "js-compute-runtime bin/index.js bin/main.wasm",
+    "deploy": "fastly compute publish",
+    "vite": "bunx --bun vite"
+  },
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.0.8",
+    "vite": "^4.4.9",
+    "@fastly/js-compute": "^2.4.0",
+    "bun-types": "^1.0.1"
+  },
+  "dependencies": {
+    "hono": "^3.6.0"
+  }
+}

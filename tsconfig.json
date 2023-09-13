@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "outDir": "./bin",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "module": "esnext",
+        "target": "esnext",
+        "strict": true,
+        "moduleResolution": "bundler",
+        "moduleDetection": "force",
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "hono/jsx",
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "allowJs": false,
+        "types": [
+            "bun-types", // add Bun global
+            "@fastly/js-compute"
+        ],
+    }
+}
